@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>Feedback</title>
+</head>
+<body>
+     <nav class="navibar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="next.html">Feed</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="other.html">Other</a></li>   
+        </ul>    
+    </nav>
+
+    <hr>
+
+    <h2>Quer interagir? ⚡</h2>
+    <h3>Aqui você pode compartilhar suas ideias, críticas ou sugestões.
+        Achou algo incrível e quer elogiar?
+        Sentiu falta de alguma Informação no site?
+        Envie seu feedback. 😊
+    </h3>
+
+    <hr>
+    <h2>Quem é você:</h2>
+    <form class="form1" action="dados-user" method="post">
+        <fieldset>
+            <legend>Dados Pessoais e Feedback:</legend>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="notaSite">Minhas estrelas pro site: ⭐</label>
+            <select name="notaSite" id="notaSite">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <p>Gostou do site?</p>
+            <input type="radio" id="sim" name="gostou" value="sim">
+            <label for="sim">Sim.</label><br>
+
+            <input type="radio" id="nao" name="gostou" value="nao">
+            <label for="nao">Não.</label><br>
+
+            <label for="sugestao">Qual sua sugestão pro site?</label>
+            <textarea name="sugestao" id="sugestao" rows="4" placeholder="Escreva suas sugestões aqui..."></textarea><br>    
+
+            <p>Suas sugestões serão usadas para melhorar o site.</p>            
+            <p>Agradeço pelo contato!</p>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+
+    <hr>
+    <h2>Sua opinião:</h2>
+    <form class="form2" action="/informacoes-user" method="post">
+            <fieldset>
+                <legend>Avalie...</legend>
+
+                <label for="nota">O que achou do design da página?</label>
+                <select name="nota" id="nota">
+                    <option value="ruim">Ruim</option>
+                    <option value="razoavel">Razoável</option>
+                    <option value="bom">Bom</option>
+                    <option value="excelente">Excelente</option>
+                    <option value="craque">Espetacular</option>
+                </select>
+
+                <label for="nivel"><br><br>Quão qualificado acha que sou?</label>
+                <input type="range" id="nivel" name="nivel" min="1" max="100" step="1">
+
+                <p>O quanto você gosta de programação?</p>
+                <label for="numero">Valor:</label>
+                <input type="number" id="numero" name="numero"><br>
+
+                <label for="skill"><br>Você tem ou já teve alguma afinidade com programação?</label>
+                <input type="text" id="afinidade" name="afinidade"><br>
+                
+
+                <p> Qual linguagem de programação você gostaria de aprender?</p> 
+                <input type="checkbox" id="html-css" name="linguagens" value="hmtl-css">
+                <label for="html-css">Html/Css</label><br>
+
+                <input type="checkbox" id="js" name="linguagens" value="js">
+                <label for="js">JavaScript</label><br>
+
+                <input type="checkbox" id="python" name="linguagens" value="python">
+                <label for="python">Python</label><br>
+
+                <input type="checkbox" id="react" name="linguagens" value="react">
+                <label for="react">React</label><br>
+
+                <input type="checkbox" id="java" name="linguagens" value="java">
+                <label for="java">Java</label><br>
+
+                <input type="checkbox" id="sql" name="linguagens" value="sql">
+                <label for="sql">SQL</label><br>
+
+                <input type="checkbox" id="csharp" name="linguagens" value="csharp">
+                <label for="csharp">C#</label><br>
+
+                <input type="checkbox" id="cplus" name="linguagens" value="cplus">
+                <label for="cplus">C++</label><br>
+
+                <input type="checkbox" id="outra" name="linguagens" value="outra">
+                <label for="outra">Outra</label><br>
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+    </form>
+</body>
+</html>

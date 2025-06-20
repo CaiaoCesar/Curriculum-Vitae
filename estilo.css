@@ -18,13 +18,18 @@ body {
     font-family: var(--text-font);
     margin: 2% 5%;
     color: var(--primary-color);
+    border-left: 10px solid white;   
+    border-right: 10px solid white;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
 }
 
 /* Navegação */
 .navibar ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     background-color: var(--nav-bg-color);
     padding: 10px 0;
     margin: 0;
@@ -84,8 +89,8 @@ h2 {
 }
 
 .apresentation img#capa {
-    width: 300px;
-    height: 300px;
+    width: 30rem;
+    height: 30rem;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid white;
@@ -237,6 +242,12 @@ h2 {
     background-color: #444;
 }
 
+/* Capacitações */
+.data-additional{
+    text-align: center;
+    margin: 20px 0;
+}
+
 /* Youtube */
 .youtuber {
     display: flex;
@@ -273,6 +284,48 @@ footer img#rodape {
     border-radius: 50%;
     margin: 0 auto;
     display: block;
+}
+
+/*Formulario*/
+.form1 {
+    position: relative;
+    background-image: url('/images/cartoonCaio.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Potta One', sans-serif;
+    font-size: large;
+    font-weight: 700;
+    color: ghostwhite;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form2 {
+    position: relative;
+    background-image: url('/images/cartoonCaioform2.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Potta One', sans-serif;
+    font-weight: 700;
+    color: ghostwhite;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+button{
+    margin: 15px 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Potta One', sans-serif;
+    font-weight: 700;
 }
 
 /* Media Queries para dispositivos móveis */
@@ -325,6 +378,10 @@ footer img#rodape {
 
     .youtuber iframe {
         height: 200px;
+    }
+
+     .form1, .form2{
+        background-size: cover;
     }
 }
 
