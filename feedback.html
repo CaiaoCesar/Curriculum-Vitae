@@ -3,70 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="estilo.css">
+    <meta name="description" content="Currículo online de Caio César. Desenvolvedor apaixonado por tecnologia, criatividade e resolução de problemas.">
+
+    <link rel="stylesheet" href="/css/style.css">
 
     <title>Feedback</title>
 </head>
 <body>
-     <nav class="navibar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="next.html">Feed</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-            <li><a href="other.html">Other</a></li>   
-        </ul>    
-    </nav>
+    <div class="container">
+        <div class="header-bar">
+            <nav class="navibar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="next.html">Feed</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="other.html">Other</a></li>   
+                </ul>  
+            </nav>
 
-    <hr>
+            <div class="trademark">
+                <h2>Curriculum Vitae</h2>
+                <img class="trademark-logo" src="/images/logo.png" alt="logo curriculum vitae">   
+            </div>
+        </div>
 
-    <h2>Quer interagir? ⚡</h2>
-    <h3>Aqui você pode compartilhar suas ideias, críticas ou sugestões.
-        Achou algo incrível e quer elogiar?
-        Sentiu falta de alguma Informação no site?
-        Envie seu feedback. 😊
-    </h3>
+        <hr>
 
-    <hr>
-    <h2>Quem é você:</h2>
-    <form class="form1" action="dados-user" method="post">
-        <fieldset>
-            <legend>Dados Pessoais e Feedback:</legend>
+        <h2>Quer interagir? ⚡</h2>
+        <h3>Aqui você pode compartilhar suas ideias, críticas ou sugestões.
+            Achou algo incrível e quer elogiar?
+            Sentiu falta de alguma Informação no site?
+            Envie seu feedback. 😊
+        </h3>
 
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required><br>
+        <hr>
+        <h2>Quem é você:</h2>
+        <form class="form1" action="dados-user" method="post">
+            <fieldset>
+                <legend>Dados Pessoais e Feedback:</legend>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br>
 
-            <label for="notaSite">Minhas estrelas pro site: ⭐</label>
-            <select name="notaSite" id="notaSite">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
 
-            <p>Gostou do site?</p>
-            <input type="radio" id="sim" name="gostou" value="sim">
-            <label for="sim">Sim.</label><br>
+                <label for="notaSite">Minhas estrelas pro site: ⭐</label>
+                <select name="notaSite" id="notaSite">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
 
-            <input type="radio" id="nao" name="gostou" value="nao">
-            <label for="nao">Não.</label><br>
+                <p>Gostou do site?</p>
+                <input type="radio" id="sim" name="gostou" value="sim">
+                <label for="sim">Sim.</label><br>
 
-            <label for="sugestao">Qual sua sugestão pro site?</label>
-            <textarea name="sugestao" id="sugestao" rows="4" placeholder="Escreva suas sugestões aqui..."></textarea><br>    
+                <input type="radio" id="nao" name="gostou" value="nao">
+                <label for="nao">Não.</label><br>
 
-            <p>Suas sugestões serão usadas para melhorar o site.</p>            
-            <p>Agradeço pelo contato!</p>
-            <button type="submit">Enviar</button>
-        </fieldset>
-    </form>
+                <label for="sugestao">Qual sua sugestão pro site?</label>
+                <textarea name="sugestao" id="sugestao" rows="4" placeholder="Escreva suas sugestões aqui..."></textarea><br>    
 
-    <hr>
-    <h2>Sua opinião:</h2>
-    <form class="form2" action="/informacoes-user" method="post">
+                <p>Suas sugestões serão usadas para melhorar o site.</p>            
+                <p>Agradeço pelo contato!</p>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+
+        <hr>
+        <h2>Sua opinião:</h2>
+        <form class="form2" action="/informacoes-user" method="post">
             <fieldset>
                 <legend>Avalie...</legend>
 
@@ -120,6 +129,18 @@
 
                 <button type="submit">Enviar</button>
             </fieldset>
-    </form>
+        </form>
+        
+        <footer>
+            <div class="info-contact">
+                <h2>Informações de Contato:</h2>
+                <a href="https://github.com/CaiaoCesar" title="github ícone" target="_blank"><img id="github" src="/images/github.png" alt=""></a>
+                <a href= "mailto:caiocesarc61@gmail.com" title="gmail ícone" target="_blank"><img id="gmail" src="/images/gmail.png" alt=""></a>
+                <a href="https://www.instagram.com/caio_ofc_cesar/?__pwa=1" title="instagram ícone" target="_blank"><img id="instagram" src="/images/instagram.png" alt=""></a>
+                <a href="https://wa.me/5538992017275" title="whatsapp ícone" target="_blank"><img id="whatsapp" src="/images/whatsapp.svg" alt=""></a>
+            </div>
+            <img id="rodape" src="/images/footerImg.jpg" alt="Imagem de Rodapé">
+        </footer>
+      </div>
 </body>
 </html>

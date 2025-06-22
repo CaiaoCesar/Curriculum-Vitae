@@ -11,18 +11,24 @@
     --text-font: "WDXL Lubrifont TC", sans-serif;
     --title-font: "Fascinate", system-ui;
     --name-font: "Pacifico", cursive;
-}
+}  
 
 body {
-    background-color: var(--background-color);
+    background-color: white; /* cor da moldura */
+    background-image: linear-gradient(#ffffff, #dcdcdc);
     font-family: var(--text-font);
-    margin: 2% 5%;
-    color: var(--primary-color);
-    border-left: 10px solid white;   
-    border-right: 10px solid white;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin: 0;
+    padding: 5px 5px; /* espaço visível da moldura */
     box-sizing: border-box;
+}
+
+.container {
+    width: 95%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #2b2626;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
 }
 
 /* Navegação */
@@ -56,6 +62,39 @@ body {
     background-color: #383737;
 }
 
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--nav-bg-color);
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.trademark {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary-color);
+}
+
+.trademark h2 {
+    font-family: var(--title-font);
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.trademark-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.trademark:hover {
+    transform: scale(1.1);
+}
+
+
 /* Cabeçalhos */
 h1 {
     text-align: center;
@@ -71,6 +110,15 @@ h2 {
     font-size: 2em;
     margin: 15px 0;
 }
+
+h3, h4, .abilities {
+    color: var(--primary-color)
+}
+
+.container:hover {
+    box-shadow: 0 0 40px rgba(255, 215, 0, 0.3); /* glow dourado leve */
+}
+
 
 /* Seção de Apresentação */
 .apresentation {
@@ -218,7 +266,7 @@ h2 {
 .abilities li {
     font-size: 1.1em;
     margin: 10px 0;
-    text-align: left;
+    text-align: center;
 }
 
 /* Trabalhos */
@@ -286,6 +334,10 @@ footer img#rodape {
     display: block;
 }
 
+footer img#rodape:hover {
+    transform: scale(1.1);
+}
+
 /*Formulario*/
 .form1 {
     position: relative;
@@ -326,6 +378,10 @@ button{
     align-items: center;
     font-family: 'Potta One', sans-serif;
     font-weight: 700;
+}
+
+button:hover {
+    transform: scale(1.1);
 }
 
 /* Media Queries para dispositivos móveis */
